@@ -1,3 +1,98 @@
+
+
+🖥️ X870E BIOS — Must Settings 
+31/08/2025
+This profile is focused on:
+
+✅ Performance (PBO undervolt, XMP/EXPO RAM)
+
+✅ Efficiency (reduced power waste from unused devices)
+
+✅ Clean boot (no auto-installer, no RGB)
+
+🚫 No security features (Windows 10, TPM/Secure Boot disabled)
+
+⚡ CPU & Memory
+
+PBO → -20 Negative Curve All Cores
+Uses Precision Boost Overdrive with negative curve (undervolts all cores for efficiency/performance balance).
+
+DRAM Profile Setting → EXPO/XMP Profile
+Enables pre-tuned memory timings for higher frequency RAM.
+
+🔒 Security (Disabled for latency/perf gain)
+
+fTPM → Disabled
+Disables firmware TPM (used for Windows BitLocker & Secure Boot).
+
+Trusted Platform Module → Disabled
+Ensures TPM is fully disabled.
+
+Pluton Security Processor → Disabled
+Disables Microsoft Pluton (security co-processor).
+
+Security Device Support → Disabled
+Turns off TPM/Pluton enumeration.
+
+Secure Boot → Disabled
+Disables UEFI Secure Boot, allowing unsigned OS boot.
+
+CSM → Disabled
+Keeps system in pure UEFI mode (no legacy boot).
+
+TSME → Disabled
+Turns off Transparent Secure Memory Encryption.
+
+SMEE → Disabled
+Disables Speculative Memory Encryption Extensions.
+
+🎮 GPU / PCIe
+
+Re-Size BAR → Enabled
+Lets CPU access full GPU VRAM (helps gaming).
+
+dGPU Only Mode → Enabled
+Disables iGPU, forces discrete GPU.
+
+📡 Connectivity (Disabled if unused)
+
+Bluetooth → Disabled
+
+Wi-Fi → Disabled
+
+WAN Radio → Disabled
+
+Thunderbolt Support → Disabled
+
+HDMI 2.0 Support → Disabled
+
+🚀 Boot & System
+
+Fast Boot → Disabled
+Forces full POST for reliability (slower boot).
+
+Setup Prompt Timeout → 3
+BIOS boot menu waits 3 sec before OS loads.
+
+Onboard Debug Port LED → Off
+Turns off onboard POST LEDs.
+
+Auto Driver Installer → Disabled
+Prevents BIOS from auto-installing vendor drivers.
+
+🎨 Aesthetics
+
+RGB LED → Off
+Disables motherboard RGB lighting.
+
+
+
+
+
+
+
+
+
 # 🧠 ASRock X870E Nova WiFi + Ryzen 7800X3D BIOS Tweak Guide
 **OS:** Windows 10  
 **Goal:** Max performance, no security features, minimal latency, no bloat  
