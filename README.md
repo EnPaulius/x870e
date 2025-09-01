@@ -87,7 +87,55 @@ Disables motherboard RGB lighting.
 
 
 
+🧪 OPTIONAL Tweaks (Latency/Performance Tuning)
 
+These are not required but can be enabled for further optimization. They may increase idle power draw or affect stability.
+
+⚡ CPU & Power Management
+
+Global C-State Control → Disabled
+Prevents CPU from entering deep sleep states → improves latency but higher idle watts.
+
+ACPI _CST C1 Declaration → Disabled
+Disables C1 reporting → helps reduce micro-latencies.
+
+DF Cstates → Disabled
+Disables Data Fabric low-power states.
+
+Power Supply Idle Control → Typical Current Idle
+Prevents “low current idle” PSU issues.
+
+PSS Support → Disabled
+Disables CPU power states (locks frequency scaling).
+
+CPPC Dynamic Preferred Cores → Auto
+Lets OS decide best cores for scheduling.
+
+SoC/Uncore OC Mode → Enabled
+Unlocks SoC OC for more memory/PCIe bandwidth.
+
+💾 Memory
+
+DRAM Performance Mode → Aggressive
+Tighter timings for lower latency.
+
+Memory Context Restore → Disabled
+Forces full RAM training (slower boot, more stable).
+
+Power Down Mode → Disabled
+Keeps memory awake → lower latency.
+
+Data Scramble → Disabled
+Slight latency benefit.
+
+🎮 PCIe / Bus Tuning
+
+Spread Spectrum (CPU/PCIe/FCH) → Disabled
+Disables clock modulation → cleaner signals for OC/latency (may increase EMI).
+
+PCIe ARI Support → Auto
+
+PCIe ARI Enumeration → Auto
 
 
 
